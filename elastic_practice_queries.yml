@@ -1,0 +1,288 @@
+  DELETE hadis/_doc/1
+    DELETE hadis/_doc/2
+    DELETE hadis/_doc/3
+    DELETE hadis/_doc/4
+    DELETE hadis/_doc/5
+    
+    POST hadis/_doc/1
+    {
+      "book": "বুখারি শরীফ",
+      "hadisNo": 12,
+      "text": "আনাস (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ তোমাদের কেউ প্রকৃত মু’মিন হবে না, যতক্ষণ না সে তার ভাইয়ের জন্য তা-ই পছন্দ করবে, যা নিজের জন্য পছন্দ করে।"
+    }
+
+    POST hadis/_doc/2
+    {
+      "book": "বুখারি শরীফ",
+      "hadisNo": 13,
+      "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ সেই পবিত্র সত্তার কসম, যাঁর হাতে আমার প্রাণ, তোমাদের কেউ প্রকৃত মু’মিন হতে পারবে না, যতক্ষণ না আমি তার কাছে তার পিতা ও সন্তানের চেয়ে বেশি প্রিয় হই।।"
+    }
+
+    POST hadis/_doc/3
+    {
+      "book": "আবু দাউদ শরীফ",
+      "hadisNo": 140,
+      "text": "আবূ হুরায়রা (রাঃ) হতে বর্ণিত। রাসূলুল্লাহ্ সাল্লাল্লাহু আলাইহি ওযাসাল্লাম বলেছেন, যখন তোমাদের কেউ উযূ (ওজু/অজু/অযু) করে- তখন সে যেন তার নাকের মধ্যে, পানি প্রবেশ করিয়ে তা পরিষ্কার করে। "
+    }
+
+
+    POST hadis/_doc/4
+    {
+      "book": "সুনানু ইবনে মাজাহ",
+      "hadisNo": 109,
+      "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত। রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেনঃ জান্নাতে প্রত্যেক নবীর একজন অন্তরঙ্গ বন্ধু থাকবে। সেখানে আমার অন্তরঙ্গ বন্ধু হবে উসমান ইবনু আফফান।"
+    }
+
+    # Get all of the documents
+    GET hadis/_search
+    
+    # Match query: breaks by words, performs 'or'
+    GET hadis/_search
+    {
+      "query": {
+        "match": {
+          "book": "বুখারি মাজাহ"
+        }
+      }
+    }
+
+    # Match (and) query: performs 'and'
+    GET hadis/_search
+    {
+      "query": {
+        "match": {
+          "text": {
+            "query": "হুরায়রা বন্ধু",
+            "operator": "and"
+          }
+        }
+      }
+    }
+
+    # Match phrase query: search as sentence
+    GET hadis/_search
+    {
+      "query": {
+        "match_phrase": {
+          "text": " তোমাদের কেউ প্রকৃত মু’মিন হবে "
+        }
+      }
+    }
+
+    # Multi match query: search same query in multiple fields
+    GET hadis/_search
+    {
+      "query": {
+        "multi_match": {
+          "query": "ইবনে ",
+          "fields": ["book", "text"]
+        }
+      }
+    }
+
+    # Range query: filters by range
+    GET hadis/_search
+    {
+      "query": {
+        "range": {
+          "hadisNo": {
+            "gte": 12,
+            "lte": 13
+          }
+        }
+      }
+    }
+
+    # Boolean query: must; checks multiple conditions
+    GET hadis/_search
+    {
+      "query": {
+        "bool": {
+          "must": [
+            {"match": {"book": "বুখারি"}},
+            {"match": {"text": "আনাস"}}
+          ]
+        }
+      }
+    }
+
+
+    # Boolean query: must_not; checks multiple conditions using must not & must
+    GET hadis/_search
+    {
+      "query": {
+        "bool": {
+          "must": {"match": {"text": "হুরায়রা"}},
+          "must_not": {"match": {"book": "বুখারি"}}
+        }
+      }
+    }
+
+
+    # Boolean query: should; gives 'should' field included doc's higher score
+    GET hadis/_search
+    {
+      "query": {
+        "bool": {
+          "must": {"match": {"text": "হুরায়রা"}},
+          "should": {"match": {"book": "দাউদ"}}
+        }
+      }
+    }
+
+
+    # Boolean query: filter; it just filters the result without infacting the score
+    GET hadis/_search
+    {
+      "query": {
+        "bool": {
+          "must": {"match": {"text": "হুরায়রা"}},
+          "filter": {"match": {"book": "দাউদ"}}
+        }
+      }
+    }
+
+
+    # Fuzziness with incorrect spell tolerance
+    GET hadis/_search
+    {
+      "query": {
+        "match": {
+          "book": {
+            "query": "বুখার",
+            "fuzziness": 1
+          }
+        }
+      }
+    }
+
+    # Fuzziness in multi match query
+    GET hadis/_search
+    {
+      "query": {
+        "multi_match": {
+          "query": "আবু",
+          "fields": ["book", "text"],
+          "fuzziness": 1
+        }
+      }
+    }
+
+
+    # Sorting
+    GET hadis/_search
+    {
+      "query": {
+        "match": {
+          "book": {
+            "query": "বুখার",
+            "fuzziness": 1
+          }
+        }
+      },
+      "sort": [
+        {
+          "_id": {
+            "order": "asc"
+          }
+        }
+      ]
+    }
+
+    # Analyzers
+    # Standard(default): Breaks word, removes punctuations, converts to lowercase.
+    GET _analyze
+    {
+      "analyzer": "standard",
+      "text": "Hello, this is my-world36!"
+    }
+
+    # Simple: performs all of standard + removes numbers
+    GET _analyze
+    {
+      "analyzer": "simple",
+      "text": "Hello, this is my-world36!"
+    }
+
+    # Stop: performs all of simple + removes common words (is, this, etc)
+    GET _analyze
+    {
+      "analyzer": "stop",
+      "text": "Hello, this is my-world36!"
+    }
+
+
+    # Keyword: Keeps the sentence as it is.
+    GET _analyze
+    {
+      "analyzer": "keyword",
+      "text": "Hello, this is my-world36!"
+    }
+
+    # Whitespace: Splits by white space and does nothing else.
+    GET _analyze
+    {
+      "analyzer": "whitespace",
+      "text": "Hello, this is my-world36!"
+    }
+
+    # Creating own custom analyzer
+    DELETE my_test_settings_index
+    PUT my_test_settings_index
+    {
+      "settings": {
+        "analysis": {
+          "char_filter": {
+            "cpp_filter" : {
+              "type": "mapping",
+              "mappings": ["c++ => cpp", "C++ => cpp"]
+            }
+          },
+          "filter": {
+            "my_stopwords": {
+              "type": "stop",
+              "stopwords": ["my", "is"]
+            }
+          },
+          "analyzer": {
+            "my_custom_analyzer": {
+              "char_filter": ["html_strip", "cpp_filter"],
+              "tokenizer": "standard",
+              "filter": ["lowercase", "my_stopwords", "snowball"]
+            }
+          }
+        }
+      }
+    }
+
+    GET my_test_settings_index
+    
+    POST my_test_settings_index/_analyze
+    {
+      "analyzer": "my_custom_analyzer",
+      "text": "C++ is my favorite language."
+    }
+
+    # Ngram tokenizer
+    POST _analyze
+    {
+      "tokenizer": "ngram",
+      "text": "Hello world!"
+    }
+
+    # Mapping
+    GET hadis/_mapping
+
+
+
+
+
+
+
+
+
+
+
+
+
+

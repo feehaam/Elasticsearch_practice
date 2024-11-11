@@ -1,0 +1,1090 @@
+# DELETE hadis/_doc/1
+{
+  "_index": "hadis",
+  "_id": "1",
+  "_version": 11,
+  "result": "deleted",
+  "_shards": {
+    "total": 2,
+    "successful": 1,
+    "failed": 0
+  },
+  "_seq_no": 44,
+  "_primary_term": 1
+}
+  # DELETE hadis/_doc/2
+  {
+    "_index": "hadis",
+    "_id": "2",
+    "_version": 12,
+    "result": "deleted",
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    },
+    "_seq_no": 45,
+    "_primary_term": 1
+  }
+  # DELETE hadis/_doc/3
+  {
+    "_index": "hadis",
+    "_id": "3",
+    "_version": 7,
+    "result": "deleted",
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    },
+    "_seq_no": 46,
+    "_primary_term": 1
+  }
+  # DELETE hadis/_doc/4
+  {
+    "_index": "hadis",
+    "_id": "4",
+    "_version": 7,
+    "result": "deleted",
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    },
+    "_seq_no": 47,
+    "_primary_term": 1
+  }
+  # DELETE hadis/_doc/5
+  {
+    "_index": "hadis",
+    "_id": "5",
+    "_version": 1,
+    "result": "not_found",
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    },
+    "_seq_no": 48,
+    "_primary_term": 1
+  }
+  # POST hadis/_doc/1
+  {
+    "_index": "hadis",
+    "_id": "1",
+    "_version": 12,
+    "result": "created",
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    },
+    "_seq_no": 49,
+    "_primary_term": 1
+  }
+  # POST hadis/_doc/2
+  {
+    "_index": "hadis",
+    "_id": "2",
+    "_version": 13,
+    "result": "created",
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    },
+    "_seq_no": 50,
+    "_primary_term": 1
+  }
+  # POST hadis/_doc/3
+  {
+    "_index": "hadis",
+    "_id": "3",
+    "_version": 8,
+    "result": "created",
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    },
+    "_seq_no": 51,
+    "_primary_term": 1
+  }
+  # POST hadis/_doc/4
+  {
+    "_index": "hadis",
+    "_id": "4",
+    "_version": 8,
+    "result": "created",
+    "_shards": {
+      "total": 2,
+      "successful": 1,
+      "failed": 0
+    },
+    "_seq_no": 52,
+    "_primary_term": 1
+  }
+  # GET hadis/_search
+  {
+    "took": 0,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 4,
+        "relation": "eq"
+      },
+      "max_score": 1,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "1",
+          "_score": 1,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 12,
+            "text": "আনাস (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ তোমাদের কেউ প্রকৃত মু’মিন হবে না, যতক্ষণ না সে তার ভাইয়ের জন্য তা-ই পছন্দ করবে, যা নিজের জন্য পছন্দ করে।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "2",
+          "_score": 1,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 13,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ সেই পবিত্র সত্তার কসম, যাঁর হাতে আমার প্রাণ, তোমাদের কেউ প্রকৃত মু’মিন হতে পারবে না, যতক্ষণ না আমি তার কাছে তার পিতা ও সন্তানের চেয়ে বেশি প্রিয় হই।।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "3",
+          "_score": 1,
+          "_source": {
+            "book": "আবু দাউদ শরীফ",
+            "hadisNo": 140,
+            "text": "আবূ হুরায়রা (রাঃ) হতে বর্ণিত। রাসূলুল্লাহ্ সাল্লাল্লাহু আলাইহি ওযাসাল্লাম বলেছেন, যখন তোমাদের কেউ উযূ (ওজু/অজু/অযু) করে- তখন সে যেন তার নাকের মধ্যে, পানি প্রবেশ করিয়ে তা পরিষ্কার করে। "
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "4",
+          "_score": 1,
+          "_source": {
+            "book": "সুনানু ইবনে মাজাহ",
+            "hadisNo": 109,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত। রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেনঃ জান্নাতে প্রত্যেক নবীর একজন অন্তরঙ্গ বন্ধু থাকবে। সেখানে আমার অন্তরঙ্গ বন্ধু হবে উসমান ইবনু আফফান।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 0,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "max_score": 1.1129161,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "4",
+          "_score": 1.1129161,
+          "_source": {
+            "book": "সুনানু ইবনে মাজাহ",
+            "hadisNo": 109,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত। রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেনঃ জান্নাতে প্রত্যেক নবীর একজন অন্তরঙ্গ বন্ধু থাকবে। সেখানে আমার অন্তরঙ্গ বন্ধু হবে উসমান ইবনু আফফান।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "1",
+          "_score": 0.7549127,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 12,
+            "text": "আনাস (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ তোমাদের কেউ প্রকৃত মু’মিন হবে না, যতক্ষণ না সে তার ভাইয়ের জন্য তা-ই পছন্দ করবে, যা নিজের জন্য পছন্দ করে।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "2",
+          "_score": 0.7549127,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 13,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ সেই পবিত্র সত্তার কসম, যাঁর হাতে আমার প্রাণ, তোমাদের কেউ প্রকৃত মু’মিন হতে পারবে না, যতক্ষণ না আমি তার কাছে তার পিতা ও সন্তানের চেয়ে বেশি প্রিয় হই।।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 0,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 1,
+        "relation": "eq"
+      },
+      "max_score": 2.1425903,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "4",
+          "_score": 2.1425903,
+          "_source": {
+            "book": "সুনানু ইবনে মাজাহ",
+            "hadisNo": 109,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত। রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেনঃ জান্নাতে প্রত্যেক নবীর একজন অন্তরঙ্গ বন্ধু থাকবে। সেখানে আমার অন্তরঙ্গ বন্ধু হবে উসমান ইবনু আফফান।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 1,
+        "relation": "eq"
+      },
+      "max_score": 2.8019614,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "1",
+          "_score": 2.8019614,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 12,
+            "text": "আনাস (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ তোমাদের কেউ প্রকৃত মু’মিন হবে না, যতক্ষণ না সে তার ভাইয়ের জন্য তা-ই পছন্দ করবে, যা নিজের জন্য পছন্দ করে।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 0,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 1,
+        "relation": "eq"
+      },
+      "max_score": 1.1129161,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "4",
+          "_score": 1.1129161,
+          "_source": {
+            "book": "সুনানু ইবনে মাজাহ",
+            "hadisNo": 109,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত। রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেনঃ জান্নাতে প্রত্যেক নবীর একজন অন্তরঙ্গ বন্ধু থাকবে। সেখানে আমার অন্তরঙ্গ বন্ধু হবে উসমান ইবনু আফফান।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "max_score": 1,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "1",
+          "_score": 1,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 12,
+            "text": "আনাস (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ তোমাদের কেউ প্রকৃত মু’মিন হবে না, যতক্ষণ না সে তার ভাইয়ের জন্য তা-ই পছন্দ করবে, যা নিজের জন্য পছন্দ করে।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "2",
+          "_score": 1,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 13,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ সেই পবিত্র সত্তার কসম, যাঁর হাতে আমার প্রাণ, তোমাদের কেউ প্রকৃত মু’মিন হতে পারবে না, যতক্ষণ না আমি তার কাছে তার পিতা ও সন্তানের চেয়ে বেশি প্রিয় হই।।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 0,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 1,
+        "relation": "eq"
+      },
+      "max_score": 1.9628386,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "1",
+          "_score": 1.9628386,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 12,
+            "text": "আনাস (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ তোমাদের কেউ প্রকৃত মু’মিন হবে না, যতক্ষণ না সে তার ভাইয়ের জন্য তা-ই পছন্দ করবে, যা নিজের জন্য পছন্দ করে।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 0,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "max_score": 0.38845783,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "4",
+          "_score": 0.38845783,
+          "_source": {
+            "book": "সুনানু ইবনে মাজাহ",
+            "hadisNo": 109,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত। রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেনঃ জান্নাতে প্রত্যেক নবীর একজন অন্তরঙ্গ বন্ধু থাকবে। সেখানে আমার অন্তরঙ্গ বন্ধু হবে উসমান ইবনু আফফান।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "3",
+          "_score": 0.36260855,
+          "_source": {
+            "book": "আবু দাউদ শরীফ",
+            "hadisNo": 140,
+            "text": "আবূ হুরায়রা (রাঃ) হতে বর্ণিত। রাসূলুল্লাহ্ সাল্লাল্লাহু আলাইহি ওযাসাল্লাম বলেছেন, যখন তোমাদের কেউ উযূ (ওজু/অজু/অযু) করে- তখন সে যেন তার নাকের মধ্যে, পানি প্রবেশ করিয়ে তা পরিষ্কার করে। "
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 0,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "max_score": 1.4755247,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "3",
+          "_score": 1.4755247,
+          "_source": {
+            "book": "আবু দাউদ শরীফ",
+            "hadisNo": 140,
+            "text": "আবূ হুরায়রা (রাঃ) হতে বর্ণিত। রাসূলুল্লাহ্ সাল্লাল্লাহু আলাইহি ওযাসাল্লাম বলেছেন, যখন তোমাদের কেউ উযূ (ওজু/অজু/অযু) করে- তখন সে যেন তার নাকের মধ্যে, পানি প্রবেশ করিয়ে তা পরিষ্কার করে। "
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "4",
+          "_score": 0.38845783,
+          "_source": {
+            "book": "সুনানু ইবনে মাজাহ",
+            "hadisNo": 109,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত। রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেনঃ জান্নাতে প্রত্যেক নবীর একজন অন্তরঙ্গ বন্ধু থাকবে। সেখানে আমার অন্তরঙ্গ বন্ধু হবে উসমান ইবনু আফফান।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "2",
+          "_score": 0.32382178,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 13,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ সেই পবিত্র সত্তার কসম, যাঁর হাতে আমার প্রাণ, তোমাদের কেউ প্রকৃত মু’মিন হতে পারবে না, যতক্ষণ না আমি তার কাছে তার পিতা ও সন্তানের চেয়ে বেশি প্রিয় হই।।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 0,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 1,
+        "relation": "eq"
+      },
+      "max_score": 0.36260855,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "3",
+          "_score": 0.36260855,
+          "_source": {
+            "book": "আবু দাউদ শরীফ",
+            "hadisNo": 140,
+            "text": "আবূ হুরায়রা (রাঃ) হতে বর্ণিত। রাসূলুল্লাহ্ সাল্লাল্লাহু আলাইহি ওযাসাল্লাম বলেছেন, যখন তোমাদের কেউ উযূ (ওজু/অজু/অযু) করে- তখন সে যেন তার নাকের মধ্যে, পানি প্রবেশ করিয়ে তা পরিষ্কার করে। "
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 2,
+        "relation": "eq"
+      },
+      "max_score": 0.6039302,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "1",
+          "_score": 0.6039302,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 12,
+            "text": "আনাস (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ তোমাদের কেউ প্রকৃত মু’মিন হবে না, যতক্ষণ না সে তার ভাইয়ের জন্য তা-ই পছন্দ করবে, যা নিজের জন্য পছন্দ করে।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "2",
+          "_score": 0.6039302,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 13,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ সেই পবিত্র সত্তার কসম, যাঁর হাতে আমার প্রাণ, তোমাদের কেউ প্রকৃত মু’মিন হতে পারবে না, যতক্ষণ না আমি তার কাছে তার পিতা ও সন্তানের চেয়ে বেশি প্রিয় হই।।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "took": 1,
+    "timed_out": false,
+    "_shards": {
+      "total": 1,
+      "successful": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "hits": {
+      "total": {
+        "value": 3,
+        "relation": "eq"
+      },
+      "max_score": 1.1129161,
+      "hits": [
+        {
+          "_index": "hadis",
+          "_id": "3",
+          "_score": 1.1129161,
+          "_source": {
+            "book": "আবু দাউদ শরীফ",
+            "hadisNo": 140,
+            "text": "আবূ হুরায়রা (রাঃ) হতে বর্ণিত। রাসূলুল্লাহ্ সাল্লাল্লাহু আলাইহি ওযাসাল্লাম বলেছেন, যখন তোমাদের কেউ উযূ (ওজু/অজু/অযু) করে- তখন সে যেন তার নাকের মধ্যে, পানি প্রবেশ করিয়ে তা পরিষ্কার করে। "
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "4",
+          "_score": 0.25897187,
+          "_source": {
+            "book": "সুনানু ইবনে মাজাহ",
+            "hadisNo": 109,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত। রাসূলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেনঃ জান্নাতে প্রত্যেক নবীর একজন অন্তরঙ্গ বন্ধু থাকবে। সেখানে আমার অন্তরঙ্গ বন্ধু হবে উসমান ইবনু আফফান।"
+          }
+        },
+        {
+          "_index": "hadis",
+          "_id": "2",
+          "_score": 0.21588117,
+          "_source": {
+            "book": "বুখারি শরীফ",
+            "hadisNo": 13,
+            "text": "আবূ হুরায়রা (রাঃ) থেকে বর্ণিত, রাসুলুল্লাহ সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম ইরশাদ করেনঃ সেই পবিত্র সত্তার কসম, যাঁর হাতে আমার প্রাণ, তোমাদের কেউ প্রকৃত মু’মিন হতে পারবে না, যতক্ষণ না আমি তার কাছে তার পিতা ও সন্তানের চেয়ে বেশি প্রিয় হই।।"
+          }
+        }
+      ]
+    }
+  }
+  # GET hadis/_search
+  {
+    "error": {
+      "root_cause": [
+        {
+          "type": "illegal_argument_exception",
+          "reason": "Fielddata access on the _id field is disallowed, you can re-enable it by updating the dynamic cluster setting: indices.id_field_data.enabled"
+        }
+      ],
+      "type": "search_phase_execution_exception",
+      "reason": "all shards failed",
+      "phase": "query",
+      "grouped": true,
+      "failed_shards": [
+        {
+          "shard": 0,
+          "index": "hadis",
+          "node": "akRINzOCRIKF9FFaILyq3A",
+          "reason": {
+            "type": "illegal_argument_exception",
+            "reason": "Fielddata access on the _id field is disallowed, you can re-enable it by updating the dynamic cluster setting: indices.id_field_data.enabled"
+          }
+        }
+      ],
+      "caused_by": {
+        "type": "illegal_argument_exception",
+        "reason": "Fielddata access on the _id field is disallowed, you can re-enable it by updating the dynamic cluster setting: indices.id_field_data.enabled",
+        "caused_by": {
+          "type": "illegal_argument_exception",
+          "reason": "Fielddata access on the _id field is disallowed, you can re-enable it by updating the dynamic cluster setting: indices.id_field_data.enabled"
+        }
+      }
+    },
+    "status": 400
+  }
+  # GET _analyze
+  {
+    "tokens": [
+      {
+        "token": "hello",
+        "start_offset": 0,
+        "end_offset": 5,
+        "type": "<ALPHANUM>",
+        "position": 0
+      },
+      {
+        "token": "this",
+        "start_offset": 7,
+        "end_offset": 11,
+        "type": "<ALPHANUM>",
+        "position": 1
+      },
+      {
+        "token": "is",
+        "start_offset": 12,
+        "end_offset": 14,
+        "type": "<ALPHANUM>",
+        "position": 2
+      },
+      {
+        "token": "my",
+        "start_offset": 15,
+        "end_offset": 17,
+        "type": "<ALPHANUM>",
+        "position": 3
+      },
+      {
+        "token": "world36",
+        "start_offset": 18,
+        "end_offset": 25,
+        "type": "<ALPHANUM>",
+        "position": 4
+      }
+    ]
+  }
+  # GET _analyze
+  {
+    "tokens": [
+      {
+        "token": "hello",
+        "start_offset": 0,
+        "end_offset": 5,
+        "type": "word",
+        "position": 0
+      },
+      {
+        "token": "this",
+        "start_offset": 7,
+        "end_offset": 11,
+        "type": "word",
+        "position": 1
+      },
+      {
+        "token": "is",
+        "start_offset": 12,
+        "end_offset": 14,
+        "type": "word",
+        "position": 2
+      },
+      {
+        "token": "my",
+        "start_offset": 15,
+        "end_offset": 17,
+        "type": "word",
+        "position": 3
+      },
+      {
+        "token": "world",
+        "start_offset": 18,
+        "end_offset": 23,
+        "type": "word",
+        "position": 4
+      }
+    ]
+  }
+  # GET _analyze
+  {
+    "tokens": [
+      {
+        "token": "hello",
+        "start_offset": 0,
+        "end_offset": 5,
+        "type": "word",
+        "position": 0
+      },
+      {
+        "token": "my",
+        "start_offset": 15,
+        "end_offset": 17,
+        "type": "word",
+        "position": 3
+      },
+      {
+        "token": "world",
+        "start_offset": 18,
+        "end_offset": 23,
+        "type": "word",
+        "position": 4
+      }
+    ]
+  }
+  # GET _analyze
+  {
+    "tokens": [
+      {
+        "token": "Hello, this is my-world36!",
+        "start_offset": 0,
+        "end_offset": 26,
+        "type": "word",
+        "position": 0
+      }
+    ]
+  }
+  # GET _analyze
+  {
+    "tokens": [
+      {
+        "token": "Hello,",
+        "start_offset": 0,
+        "end_offset": 6,
+        "type": "word",
+        "position": 0
+      },
+      {
+        "token": "this",
+        "start_offset": 7,
+        "end_offset": 11,
+        "type": "word",
+        "position": 1
+      },
+      {
+        "token": "is",
+        "start_offset": 12,
+        "end_offset": 14,
+        "type": "word",
+        "position": 2
+      },
+      {
+        "token": "my-world36!",
+        "start_offset": 15,
+        "end_offset": 26,
+        "type": "word",
+        "position": 3
+      }
+    ]
+  }
+  # DELETE my_test_settings_index
+  {
+    "acknowledged": true
+  }
+  # PUT my_test_settings_index
+  {
+    "acknowledged": true,
+    "shards_acknowledged": true,
+    "index": "my_test_settings_index"
+  }
+  # GET my_test_settings_index
+  {
+    "my_test_settings_index": {
+      "aliases": {},
+      "mappings": {},
+      "settings": {
+        "index": {
+          "routing": {
+            "allocation": {
+              "include": {
+                "_tier_preference": "data_content"
+              }
+            }
+          },
+          "number_of_shards": "1",
+          "provided_name": "my_test_settings_index",
+          "creation_date": "1731347060627",
+          "analysis": {
+            "filter": {
+              "my_stopwords": {
+                "type": "stop",
+                "stopwords": [
+                  "my",
+                  "is"
+                ]
+              }
+            },
+            "analyzer": {
+              "my_custom_analyzer": {
+                "filter": [
+                  "lowercase",
+                  "my_stopwords",
+                  "snowball"
+                ],
+                "char_filter": [
+                  "html_strip",
+                  "cpp_filter"
+                ],
+                "tokenizer": "standard"
+              }
+            },
+            "char_filter": {
+              "cpp_filter": {
+                "type": "mapping",
+                "mappings": [
+                  "c++ => cpp",
+                  "C++ => cpp"
+                ]
+              }
+            }
+          },
+          "number_of_replicas": "1",
+          "uuid": "tGL-f6wfR9mC0gPyQIVDnA",
+          "version": {
+            "created": "8030399"
+          }
+        }
+      }
+    }
+  }
+  # POST my_test_settings_index/_analyze
+  {
+    "tokens": [
+      {
+        "token": "cpp",
+        "start_offset": 0,
+        "end_offset": 3,
+        "type": "<ALPHANUM>",
+        "position": 0
+      },
+      {
+        "token": "favorit",
+        "start_offset": 10,
+        "end_offset": 18,
+        "type": "<ALPHANUM>",
+        "position": 3
+      },
+      {
+        "token": "languag",
+        "start_offset": 19,
+        "end_offset": 27,
+        "type": "<ALPHANUM>",
+        "position": 4
+      }
+    ]
+  }
+  # POST _analyze
+  {
+    "tokens": [
+      {
+        "token": "H",
+        "start_offset": 0,
+        "end_offset": 1,
+        "type": "word",
+        "position": 0
+      },
+      {
+        "token": "He",
+        "start_offset": 0,
+        "end_offset": 2,
+        "type": "word",
+        "position": 1
+      },
+      {
+        "token": "e",
+        "start_offset": 1,
+        "end_offset": 2,
+        "type": "word",
+        "position": 2
+      },
+      {
+        "token": "el",
+        "start_offset": 1,
+        "end_offset": 3,
+        "type": "word",
+        "position": 3
+      },
+      {
+        "token": "l",
+        "start_offset": 2,
+        "end_offset": 3,
+        "type": "word",
+        "position": 4
+      },
+      {
+        "token": "ll",
+        "start_offset": 2,
+        "end_offset": 4,
+        "type": "word",
+        "position": 5
+      },
+      {
+        "token": "l",
+        "start_offset": 3,
+        "end_offset": 4,
+        "type": "word",
+        "position": 6
+      },
+      {
+        "token": "lo",
+        "start_offset": 3,
+        "end_offset": 5,
+        "type": "word",
+        "position": 7
+      },
+      {
+        "token": "o",
+        "start_offset": 4,
+        "end_offset": 5,
+        "type": "word",
+        "position": 8
+      },
+      {
+        "token": "o ",
+        "start_offset": 4,
+        "end_offset": 6,
+        "type": "word",
+        "position": 9
+      },
+      {
+        "token": " ",
+        "start_offset": 5,
+        "end_offset": 6,
+        "type": "word",
+        "position": 10
+      },
+      {
+        "token": " w",
+        "start_offset": 5,
+        "end_offset": 7,
+        "type": "word",
+        "position": 11
+      },
+      {
+        "token": "w",
+        "start_offset": 6,
+        "end_offset": 7,
+        "type": "word",
+        "position": 12
+      },
+      {
+        "token": "wo",
+        "start_offset": 6,
+        "end_offset": 8,
+        "type": "word",
+        "position": 13
+      },
+      {
+        "token": "o",
+        "start_offset": 7,
+        "end_offset": 8,
+        "type": "word",
+        "position": 14
+      },
+      {
+        "token": "or",
+        "start_offset": 7,
+        "end_offset": 9,
+        "type": "word",
+        "position": 15
+      },
+      {
+        "token": "r",
+        "start_offset": 8,
+        "end_offset": 9,
+        "type": "word",
+        "position": 16
+      },
+      {
+        "token": "rl",
+        "start_offset": 8,
+        "end_offset": 10,
+        "type": "word",
+        "position": 17
+      },
+      {
+        "token": "l",
+        "start_offset": 9,
+        "end_offset": 10,
+        "type": "word",
+        "position": 18
+      },
+      {
+        "token": "ld",
+        "start_offset": 9,
+        "end_offset": 11,
+        "type": "word",
+        "position": 19
+      },
+      {
+        "token": "d",
+        "start_offset": 10,
+        "end_offset": 11,
+        "type": "word",
+        "position": 20
+      },
+      {
+        "token": "d!",
+        "start_offset": 10,
+        "end_offset": 12,
+        "type": "word",
+        "position": 21
+      },
+      {
+        "token": "!",
+        "start_offset": 11,
+        "end_offset": 12,
+        "type": "word",
+        "position": 22
+      }
+    ]
+  }
+  # GET hadis/_mapping
+  {
+    "hadis": {
+      "mappings": {
+        "properties": {
+          "book": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "hadisNo": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "text": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          }
+        }
+      }
+    }
+  }
